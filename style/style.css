@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+main{
+    background-color: blueviolet;
+    
+}
+
+.father{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1920px;
+    margin: 0px auto;
+}
+
+.section_father_one{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: flex ; 
+    max-width: 1920px;
+
+    margin: 0px auto;
+}
+
+.section_father_two{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: flex ; 
+    margin: 0px auto
+}
+
+.section_father_three{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    display: flex ; 
+    margin: 0px auto
+}

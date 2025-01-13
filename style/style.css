@@ -6,10 +6,10 @@
 }
 
 main{
-    background-color: blueviolet;
+    background-color: #FCF8F5;
     max-width: 1920px;
     margin: 0px auto;
-    padding: 5rem;
+    padding: 3rem;
 }
 
 h1{
@@ -55,6 +55,25 @@ flex-direction: column;
 width: 450px;
 max-width: 100%;
 
+}
+
+.product_name{
+color: #A69994 ;
+}
+
+.little_name{
+    font-weight: bold;
+    color: #453734;
+}
+
+.price{
+    color: #bf563f;
+}
+
+button{
+    background-color: white;
+    padding: 9px 30px;
+    border-radius: 20px;
 }
 
 

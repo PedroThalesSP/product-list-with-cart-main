@@ -107,7 +107,12 @@ button{
     position: relative;
     bottom: 6rem;
     left: 1rem;
+    cursor: pointer;
+    transition: transform 150ms ease-in-out;
+}
 
+button:hover{
+    transform: scale(1.1);
 }
 
 .shopping_cart{
@@ -116,9 +121,40 @@ button{
 }
 
 .children_right{
-    position: relative;
-    left: 100px;
-    background-color: blue;
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    width: 19rem;
+    height: 17rem;
+    padding: 10px;
+    border-radius: 10px;
+    position: absolute;
+    right: 8rem;
+    top: 3.1rem;
+    background-color:#FFFFFF;
 }
 
+.children_right h2{
+    color: #BB451E;
+    font-family: "Noto Sans", serif;
+    text-align: center;
+}
 
+.children_right p{
+    color: #AB9493;
+    font-family: "Noto Sans", serif;
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+#cupcake{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#cupcake img{
+    opacity: 10%;
+    max-width:60%;
+}

@@ -7,6 +7,10 @@
     text-decoration: none;
 }
 
+body{
+    background-color: #FCF8F5;
+}
+
 main{
     background-color: #FCF8F5;
     max-width: 1920px;
@@ -17,6 +21,7 @@ main{
 h1{
     font-family: "Noto Sans", serif;
     font-size: 50px; 
+    
 }
 
 p{

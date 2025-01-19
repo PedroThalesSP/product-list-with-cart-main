@@ -163,3 +163,7 @@ button:hover{
     opacity: 10%;
     max-width:60%;
 }
+
+.side{
+    display: none;
+}

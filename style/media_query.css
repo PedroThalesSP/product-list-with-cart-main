@@ -54,33 +54,20 @@
      display: none;
     }
 
-
-
-
     /* teste */
-    .mobile-menu{
-        cursor: pointer;
-        clip-path: circle(100px at 10% -15%);
-        transition: 1s ease-out;
-        background-color: white;
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100vw;
-        height: 100vh;
-        pointer-events: none;
-
+    .side{
+        display:flex;
+        flex-direction: row;
+        justify-content: right;
+        padding: 10px;
+        margin: 10px;
     }
-
-    .mobile-menu div{
-        width: 32px;
-        height: 2px;
-        background-color: #9E0104;
-        margin: 8px;
+    
+    #basket {
+        max-width: 100%;
+        width: 70px;
+        cursor:pointer;
     }
-
-
-
     /* teste  */
 
 }
@@ -140,6 +127,12 @@
     
     .price{
         text-align: center;
+    }
+
+    #basket {
+        max-width: 100%;
+        width: 50px;
+        cursor:pointer;
     }
     
 }

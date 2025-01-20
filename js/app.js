@@ -1,5 +1,7 @@
-const hamburguer = document.querySelector("hamburger");
-const nav = document.querySelector("nav");
+let open = document.getElementById('basket');
+let menu = document.getElementById('side_bar')
 
-hamburguer.addEventListener("click",() => 
-    nav.classList.toggle("active"));
+open.addEventListener('click', ()=> {
+    menu.classList.add('open_bar_menu')
+
+})

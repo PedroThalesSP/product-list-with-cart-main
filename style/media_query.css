@@ -68,6 +68,57 @@
         width: 70px;
         cursor:pointer;
     }
+/* teste */
+    .side_bar{
+        background-color: #f3ece6;
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        right: 0;
+        z-index: 99999;
+        width: 60%;
+        overflow: hidden; 
+ 
+    }
+
+    .side_bar.open_bar_menu {
+        width: 50%;
+    } 
+
+    .cupcake_mobile{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cupcake_mobile img{
+        max-width: 50%;
+    }
+
+    .exit_div{
+        display: flex;
+        width: 100%;
+
+    }
+
+    .exit{
+        margin: 10px 10px 10px 10px ;
+        max-width: 100%;
+        width: 7%;
+        cursor: pointer;
+        
+    }
+
+    .overlay_menu{
+        background-color: rgba(0, 0, 0, 0.144);
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top:0;
+        left: 0;
+        z-index: 88888;
+        display: none;
+    }
     /* teste  */
 
 }
@@ -129,10 +180,41 @@
         text-align: center;
     }
 
+    /* teste */
     #basket {
         max-width: 100%;
         width: 50px;
-        cursor:pointer;
     }
+
+    .side_bar{
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        right: 0;
+        z-index: 99999  ;
+        width: 0%;
+    }
+
+    /* .site_bar.open_menu{
+        width: 40%;
+    } */
+
+    .cupcake_mobile p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .cupcake_mobile h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .exit{
+        margin: 10px;
+        max-width: 100%;
+        width: 10%;
+    }
+
+    /* fim teste */
     
 }

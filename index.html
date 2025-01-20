@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="/style/style.css">
   <link rel="stylesheet" href="/style/media_query.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <script src="/js/app.js" defer> </script>
   
   <title>Frontend Mentor | Product list with cart</title>
 
@@ -13,21 +14,42 @@
 </head>
 <body>
   <main>    
+    <!-- teste -->
     <div id="top">
+
       <div class="side">
         <img id="basket" src="/design/cesto.png" alt="">
       </div>
 
-      <!-- teste -->
-      <div>
-        <h1> Desserts </h1>
+      <div class="side_bar">
+        <div class="side_bar_mobile " id="side_bar">
+          <div class="cupcake_mobile" >
+            <div class="exit_div">
+              <img class="exit" id="exit" src="/design/exit.png" alt="">
+            </div>
+            <!-- <a href="https://br.freepik.com/vetores-gratis/multiplas-cruzes-vermelhas-diferentes_35514636.htm#fromView=search&page=1&position=36&uuid=e9ae27a5-114f-4bfb-b0af-960a50efa0c7&query=fechar">Imagem de juicy_fish no Freepik</a> -->
+            <h2> Your Cart (0) </h2>
+            <img  src="/design/cupcake.png" alt="">
+            <!-- www.freepik.com  -->
+            <p> Your added items will appear here </p> 
+          </div>
+        </div>
+
+        <div class="overlay_menu">
+
+        </div>
       </div>
       <!-- teste fim -->
+
+
+      <!-- h1 -->
+      <div> 
+        <h1> Desserts </h1>
+      </div>
        
-  </div>
+    </div>
   
   <div class="children_right">
-
     <div id="cupcake" >
       <h2> Your Cart (0) </h2>
       <img  src="/design/cupcake.png" alt="">
@@ -140,6 +162,5 @@
   </div>
   </main>
 
-  <script src="/js/app.js"> </script>
-</body>
+  </body>
 </html>

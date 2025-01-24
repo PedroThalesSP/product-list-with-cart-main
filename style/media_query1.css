@@ -67,14 +67,11 @@
         top: 0; 
         right: 0;
         z-index: 99999;
-        width: 40%;
+        width: 0%;
+        /* remenber: 40% */
         overflow: hidden; 
  
     }
-
-    .side_bar.open_bar_menu {
-        width: 50%;
-    } 
 
     .cupcake_mobile{
         display: flex;

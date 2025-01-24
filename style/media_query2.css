@@ -67,9 +67,14 @@
         top: 0; 
         right: 0;
         z-index: 99999  ;
-        width: 60%;
+        width: 0%;
+        /* remenber: 60% */
         
     }
+
+    .side_bar.abrir{
+        width: 60%;
+    } 
 
     .cupcake_mobile p{
         font-size: 12px;

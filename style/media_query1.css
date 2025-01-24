@@ -1,7 +1,6 @@
 @media screen and ( max-width:1299px ){
 
     main{
-        background-color: white;
         padding: 0px;
     }
 
@@ -50,17 +49,9 @@
         text-align: center;
     }
 
-    /* .children_right{
-     display: none;
-    } */
-
-/* teste */
     .side{
-        display:flex;
-        flex-direction: row;
-        justify-content: right;
-        padding: 10px;
-        margin: 10px;
+        gap: 19rem;
+        justify-content: center;
     }
     
     #basket {
@@ -119,102 +110,4 @@
         z-index: 88888;
         display: none;
     }
-/* teste  */
-
-}
-
-@media screen and ( max-width: 600px  ){
-
-    main{
-        background-color: #FCF8F5;
-    }
-
-    h1{
-        text-align: center;
-    }
-    .section_father_one{
-        align-items:center;
-        justify-content:center;
-        flex-wrap: wrap;
-
-    }
-    
-    .section_father_two{
-        align-items: center;
-        justify-content:center;
-        flex-wrap: wrap;
-
-    }
-    
-    .section_father_three{
-
-        align-items: center;
-        justify-content:center;
-        flex-wrap: wrap;
-
-    }
-
-    .children{
-        display: flex;
-        flex-direction: column;
-        /* width: 190px; */
-        max-width: 60%;
-        gap: 20px;
-    }
-
-    button{
-        position: relative;
-        bottom: 6rem;
-        left: 1px
-    }
-
-    .product_name{
-        text-align: center;
-    }
-    
-    .little_name{
-        text-align: center;
-    }
-    
-    .price{
-        text-align: center;
-    }
-
-    /* teste */
-    #basket {
-        max-width: 100%;
-        width: 50px;
-    }
-
-    .side_bar{
-        height: 100vh;
-        position: fixed;
-        top: 0; 
-        right: 0;
-        z-index: 99999  ;
-        width: 0%;
-    }
-
-    /* .site_bar.open_menu{
-        width: 40%;
-    } */
-
-    .cupcake_mobile p{
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .cupcake_mobile h2{
-        font-size: 20px;
-        text-align: center;
-    }
-
-    .exit{
-        margin: 10px;
-        max-width: 100%;
-        width: 10%;
-    }
-
-    /* fim teste */
-    
 }

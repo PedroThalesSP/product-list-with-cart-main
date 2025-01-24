@@ -1,0 +1,95 @@
+@media screen and ( max-width: 600px  ){
+
+    h1{
+        text-align: center;
+    }
+
+    .side{
+        flex-direction:column;
+        gap:0px
+    }
+
+    .section_father_one{
+        align-items:center;
+        justify-content:center;
+        flex-wrap: wrap;
+
+    }
+    
+    .section_father_two{
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+
+    }
+    
+    .section_father_three{
+
+        align-items: center;
+        justify-content:center;
+        flex-wrap: wrap;
+
+    }
+
+    .children{
+        display: flex;
+        flex-direction: column;
+        max-width: 60%;
+        gap: 20px;
+    }
+
+    button{
+        position: relative;
+        bottom: 6rem;
+        left: 1px
+    }
+
+    .product_name{
+        text-align: center;
+    }
+    
+    .little_name{
+        text-align: center;
+    }
+    
+    .price{
+        text-align: center;
+    }
+
+    #basket {
+        max-width: 100%;
+        width: 50px;
+    }
+
+    .side_bar{
+        height: 100vh;
+        position: fixed;
+        top: 0; 
+        right: 0;
+        z-index: 99999  ;
+        width: 0%;
+    }
+
+    .cupcake_mobile p{
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .cupcake_mobile h2{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .exit{
+        margin: 10px;
+        max-width: 100%;
+        width: 10%;
+    }
+
+    .basquete_center_div{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+}

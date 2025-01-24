@@ -1,7 +1,7 @@
 @media screen and ( max-width:1299px ){
 
     main{
-        background-color: #FCF8F5;
+        background-color: white;
         padding: 0px;
     }
 
@@ -50,11 +50,11 @@
         text-align: center;
     }
 
-    .children_right{
+    /* .children_right{
      display: none;
-    }
+    } */
 
-    /* teste */
+/* teste */
     .side{
         display:flex;
         flex-direction: row;
@@ -68,7 +68,7 @@
         width: 70px;
         cursor:pointer;
     }
-/* teste */
+
     .side_bar{
         background-color: #f3ece6;
         height: 100vh;
@@ -119,7 +119,7 @@
         z-index: 88888;
         display: none;
     }
-    /* teste  */
+/* teste  */
 
 }
 

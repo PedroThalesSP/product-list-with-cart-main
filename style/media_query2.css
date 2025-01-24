@@ -67,7 +67,8 @@
         top: 0; 
         right: 0;
         z-index: 99999  ;
-        width: 0%;
+        width: 60%;
+        
     }
 
     .cupcake_mobile p{

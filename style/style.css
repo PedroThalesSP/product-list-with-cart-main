@@ -154,7 +154,7 @@ button:hover{
 }
 
 .side_bar{
-    background-color:rgb(184, 184, 184);
+    background-color: #f3ece6;
     height: 100vh;
     position: fixed;
     top: 0; 
@@ -162,7 +162,6 @@ button:hover{
     z-index: 99999;
     width: 32%;
     overflow: hidden; 
-    display: none;
 
 }
 

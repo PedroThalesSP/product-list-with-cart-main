@@ -1,22 +1,15 @@
+const adicionar = document.querySelectorAll(".add")
+
 let open = document.getElementById('open');
 let exit = document.getElementById('exit');
 let menu = document.getElementById('side_bar');
-
-
-// let waffle = document.getElementById('waffle');
-// let creme = document.getElementById('creme');
-// let macaron = document.getElementById('macaron');
-// let tiramisu = document.getElementById('tiramisu');
-// let baklava = document.getElementById('baklava');
-// let pie = document.getElementById('pie');
-// let cake = document.getElementById('cake');
-// let brownie = document.getElementById('brownie');
-// let panna = document.getElementById('panna');
 let preco = 0;
 
-const adicionar = document.querySelectorAll(".add")
+// teste
+let botao = document.querySelector(".add");
+let barraEsquerda = document.querySelector("#sumir")
 
-// eventos principais
+// Essa função tem como objtivo abrir e fechar a aba
 
 open.addEventListener('click',() => {
     menu.classList.add('abrir')
@@ -26,6 +19,10 @@ open.addEventListener('click',() => {
 exit.addEventListener('click',() => {
     menu.classList.remove('abrir')
 });
+
+
+// Essa função tem como finalidade adicionar os itens no carrinho
+// resolver o problema de estar pegando apenas um item
 
 adicionar.forEach((item) => {
 item.addEventListener("click", () => {
@@ -51,60 +48,13 @@ item.addEventListener("click", () => {
 })
 
 
-
-
-// funções
-
-// waffle.addEventListener('click',()=>{
-//     preco += 6.50;
-//     console.log(preco)
-
-// })
-
-
-// creme.addEventListener('click',()=>{
-//     preco += 7.00;
-//     console.log(preco)
-// })
-
-
-// macaron.addEventListener('click',()=>{
-//     preco += 8.00;
-//     console.log(preco)
-// })
-
-
-// tiramisu.addEventListener('click',()=>{
-//     preco += 5.50;
-//     console.log(preco)
-// })
-
-
-// baklava.addEventListener('click',()=>{
-//     preco += 4.00;
-//     console.log(preco)
-// })
-
-
-// pie.addEventListener('click',()=>{
-//     preco += 5.00;
-//     console.log(preco)
-// })
-
-
-// cake.addEventListener('click',()=>{
-//     preco += 4.50;
-//     console.log(preco)
-// })
-
-
-// brownie.addEventListener('click',()=>{
-//     preco += 4.50;
-//     console.log(preco)
-// })
-
-
-// panna.addEventListener('click',()=>{
-//     preco += 6.50;
-//     console.log(preco)
-// })
+// Essa função tem a finalidade de fazer a imagem da esqueda sumir ao add um item no carrinho.
+botao.addEventListener('click', function (){
+    if (barraEsquerda.style.display === 'flex') {
+        barraEsquerda.style.display = 'none';
+    }
+    
+    else {
+        barraEsquerda.style.display = 'flex'    ;
+    }
+})

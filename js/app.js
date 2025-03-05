@@ -20,11 +20,14 @@ exit.addEventListener('click',() => {
 
 // evento de escuta do itens e remoção da imagem
 
-botao.forEach((btn,index,) =>{
+botao.forEach((btn,index) =>{
 btn.addEventListener("click",()=>{
 
+    somarItensDoCarrinho()
     tabelaDeItens(index);
     removeImage();
+    
+
     })
 })
 
@@ -79,30 +82,20 @@ function removeImage(){
 
 // somar produtos do carrinho: teste // ver depois
 function somarItensDoCarrinho(){
-    let contador = document.querySelector('contador'); // contador html.
+    let contador = document.querySelector('#contador'); // contador html.
     let somaPrecos = document.querySelectorAll(".price");// valor do html.
-    let contadorModificado = contador[index].textContent; // contador html com sua localização.
-    let somaPrecosModificado = somaPrecos[index].textContent;// precos do html com sua localização.
 
-    let adicionar = document.querySelectorAll("add"); // button
-    let preco = 0; // inicializador no valor 0
-
-    adicionar.addEventListener('click'), () =>{
-
-    }
-
+    let precoTotal = 0; // inicializador no valor 0
 
     
+    somaPrecos.forEach(preco =>{
+        let precolimpo = preco.textContent
+        .replace(/[^\d,.-]/g, '')
+        .replace(',', '.');
 
+        precoTotal += parseFloat(precolimpo);
+    });
 
-
+    contador.textContent=`(${precoTotal.toFixed(2)})`;
+    
 }
-
-
-
-
-
-
-
-
-

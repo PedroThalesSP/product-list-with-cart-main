@@ -25,7 +25,6 @@ btn.addEventListener("click",()=>{
 
     tabelaDeItens(index);
     removeImage();
-    somarItensDoCarrinho() // ver depois
     })
 })
 
@@ -51,6 +50,9 @@ function tabelaDeItens(index) {
     nomeTd.style.textAlign = "center"
     precosTd.style.textAlign  = "center"
     itemTr.style.textAlign = "center"
+    itemTr.style.backgroundColor = "white";
+    precosTd.style.backgroundColor = "white";
+
 
     nomeTd.textContent = (nomeItem);
     precosTd.textContent = (precosItem);
@@ -76,18 +78,22 @@ function removeImage(){
 }
 
 // somar produtos do carrinho: teste // ver depois
-function somarItensDoCarrinho(nossoResultado){
-    let somaPrecos = document.querySelectorAll(".price");
-    let preco = 0;
+function somarItensDoCarrinho(){
+    let contador = document.querySelector('contador'); // contador html.
+    let somaPrecos = document.querySelectorAll(".price");// valor do html.
+    let contadorModificado = contador[index].textContent; // contador html com sua localização.
+    let somaPrecosModificado = somaPrecos[index].textContent;// precos do html com sua localização.
+
+    let adicionar = document.querySelectorAll("add"); // button
+    let preco = 0; // inicializador no valor 0
+
+    adicionar.addEventListener('click'), () =>{
+
+    }
 
 
     
-    somaPrecos.forEach( (elemento) => {
-        preco += parseFloat (elemento.textContent);
-        return
-    })
 
-    console.log(nossoResultado)
 
 
 }

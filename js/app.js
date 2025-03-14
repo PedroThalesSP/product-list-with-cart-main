@@ -7,6 +7,8 @@ let menu = document.getElementById('side_bar');
 let botao = document.querySelectorAll(".add");
 let barraEsquerda = document.querySelector("#sumir")
 let itemAdicionado = false;
+let precoTotal = 0;
+
 
 // abrir e fechar o carrihno
 open.addEventListener('click',() => {
@@ -30,7 +32,6 @@ btn.addEventListener("click",()=>{
 
     })
 })
-
 
 
 // adicionar itens + estilização
@@ -83,19 +84,15 @@ function removeImage(){
 // somar produtos do carrinho: teste // ver depois
 function somarItensDoCarrinho(){
     let contador = document.querySelector('#contador'); // contador html.
-    let somaPrecos = document.querySelectorAll(".price");// valor do html.
+    let precoElemento = event.target.closest(".children").querySelector(".price");
 
-    let precoTotal = 0; // inicializador no valor 0
+    let precolimpo = precoElemento.textContent
+    .replace(/[^\d,.-]/g, '')
+    .replace(',', '.');
 
-    
-    somaPrecos.forEach(preco =>{
-        let precolimpo = preco.textContent
-        .replace(/[^\d,.-]/g, '')
-        .replace(',', '.');
-
-        precoTotal += parseFloat(precolimpo);
-    });
-
-    contador.textContent=`(${precoTotal.toFixed(2)})`;
-    
+    precoTotal += parseFloat(precolimpo);
+    contador.textContent=`(${precoTotal.toFixed(2)})`;  
 }
+
+
+
